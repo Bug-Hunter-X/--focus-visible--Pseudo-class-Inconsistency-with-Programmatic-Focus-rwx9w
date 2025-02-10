@@ -1,0 +1,1 @@
+The CSS rule `:focus-visible` is not working as expected.  It is supposed to only apply the focus style when the focus is not programmatically set, but it's not behaving that way. For instance, when using JavaScript to set focus to an element, the `:focus-visible` style is still applied, although it should only trigger for keyboard or mouse interaction.
