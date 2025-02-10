@@ -1,0 +1,25 @@
+/* bug.css */
+button {
+  outline: none;
+}
+
+button:focus-visible {
+  box-shadow: 0 0 0 3px blue;
+}
+
+/* bugSolution.css */
+/*  This file only addresses the visual presentation problem.  There is no full solution using only CSS to address the inconsistency of focus-visible.   A javascript solution could be implemented using a flag or a custom focus management approach. */
+button {
+  outline: none;
+  background-color: lightgray;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button:focus-visible {
+  box-shadow: 0 0 0 3px blue;
+  background-color: #e0f2f7;
+}
+button:focus {
+ background-color: #e0f2f7;  
+} 
